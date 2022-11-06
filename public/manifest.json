@@ -1,0 +1,15 @@
+{
+    "name":"Bisser App",
+    "short_name":"BSR",
+    "start_url": ".",
+    "background_color": "#6dcdb1",
+    "theme_color": "#009578",
+    "display" : "standalone",
+    "icons" : [
+        {
+            "src" : "icon.png",
+            "sizes" : "192x192",
+            "type" : "image/png"
+        }
+    ]
+}
