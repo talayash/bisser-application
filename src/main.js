@@ -4,7 +4,7 @@ import router from './router'
 import { projectAuth } from './firebase/config'
 import './assets/main.css'
 
-// test
+// test 12
 let app
 projectAuth.onAuthStateChanged(() => {
     if(!app){
