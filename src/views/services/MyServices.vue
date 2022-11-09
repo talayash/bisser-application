@@ -5,10 +5,10 @@
     <div class="form-style">
         
         <div v-if="documents && documents.length==0" class="single">
-           <h5>You have no services!</h5>
-           <h6>Click 'Create' button to make you first one!</h6>
+           <h5>אין לך ליגות פעילות עדיין</h5>
+           <h6>לחץ כאן ליצור תחרות חדשה</h6>
         </div>
-        <button class="create-btn" @click="handleClick">Create</button>
+        <button class="create-btn" @click="handleClick" disabled>חדש</button>
 
     </div>
     

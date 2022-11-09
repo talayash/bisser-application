@@ -2,17 +2,17 @@
     <!-- Signup form -->
   <form @submit.prevent="handleSubmit">
       <!-- Signup title and inputs -->
-      <h3>Sign up</h3>
-      <input type="text" required="required" placeholder="Display Name" v-model="displayName">
-      <input type="email" required="required" placeholder="Email" v-model="email">
-      <input type="password" required="required" placeholder="Password" v-model="password">
+      <h3>הרשמה</h3>
+      <input type="text" required="required" placeholder="שם מלא" v-model="displayName">
+      <input type="email" required="required" placeholder="אימייל" v-model="email">
+      <input type="password" required="required" placeholder="סיסמא" v-model="password">
 
       <!-- Error message div -->
       <div v-if="error" class="error"> {{ error }}</div>
       
       <!-- Button section: if 'isPending' true, show an disable 'loading' button  -->
-      <button v-if="!isPending">Signup</button>
-      <button v-if="isPending" disabled>Loading ...</button>
+      <button v-if="!isPending">הרשמה</button>
+      <button v-if="isPending" disabled>טוען ...</button>
 
   </form>
 </template>

@@ -2,12 +2,14 @@
 <template>
     <!-- Search Bar -->
     <div class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Type Service or Owner name ..." aria-label="Search" v-model="searchValue">
+      <input class="form-control me-2" type="search" placeholder="חפש תחרות, ליגה או טורניר" aria-label="Search" v-model="searchValue">
     </div>
 
+    <!--   
     <div class="d-flex" v-if="!searchValue">
       <h5 >Recent services you may like</h5>
     </div>
+    -->   
 
     <!-- If search bar not empty -->
     <div v-if="searchValue">
@@ -185,6 +187,7 @@ export default {
     margin: 0 auto;
     transition: all ease 0.2s;
     border-bottom: 1px dotted #bbb;
+    direction: rtl;
   }
 
   

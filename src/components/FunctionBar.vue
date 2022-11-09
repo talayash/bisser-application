@@ -8,9 +8,9 @@
           <div class="links">
               <!-- If user is logged in show 'Logout' and other buttons -->
               <div v-if="user" >
-                  <router-link class=btnrl :to="{ name: 'Home'}">My Appointments</router-link>
-                  <router-link :to="{ name: 'MyServices'}">My Services</router-link>
-                  <router-link :to="{ name: 'Search'}">Search</router-link>
+                  <router-link class=btnrl :to="{ name: 'Home'}">עדכונים</router-link>
+                  <router-link :to="{ name: 'MyServices'}">הליגות שלי</router-link>
+                  <router-link :to="{ name: 'Search'}">חיפוש</router-link>
               </div>
                             
           </div>

@@ -5,7 +5,7 @@
       <!-- Nav section -->
       <nav>
           <!-- Image logo -->
-          <router-link :to="{ name: 'Home' }"><img src="@/assets/logo.png"></router-link>
+          <router-link :to="{ name: 'Home' }"><img src="@/assets/icon.png"></router-link> Test
           
           <!-- Links div vlass -->
           <div class="links">
@@ -16,8 +16,8 @@
               
               <!-- Else - show 'Signup' and 'Login' buttons -->
               <div v-else>
-                  <router-link class="btn" :to="{ name: 'Signup'}">Signup</router-link>
-                  <router-link class="btn" :to="{ name: 'Login'}">Login</router-link>
+                  <router-link class="btn" :to="{ name: 'Signup'}">הרשם</router-link>
+                  <router-link class="btn" :to="{ name: 'Login'}">התחבר</router-link>
               </div>  
           </div>
       </nav>

@@ -2,7 +2,7 @@
 <template>
 
     <div v-if="documents && documents.length == 0" class="single">
-      <p >You have no appointments!</p>
+      <p >אין לך ליגות פעילות</p>
     </div>
 
     <div v-else>

@@ -3,16 +3,16 @@
   <!-- Login form -->
   <form @submit.prevent="handleSubmit">
       <!-- Login title and inputs -->
-      <h3>Login</h3>
-      <input type="email" placeholder="Email" v-model="email">
-      <input type="password" placeholder="Password" v-model="password">
+      <h3>התחבר</h3>
+      <input type="email" placeholder="אימייל" v-model="email">
+      <input type="password" placeholder="סיסמה" v-model="password">
 
       <!-- Error message div -->
       <div v-if="error" class="error"> {{ error }}</div>
       
       <!-- Button section: if 'isPending' true, show an disable 'loading' button  -->
-      <button v-if="!isPending">Login</button>
-      <button v-if="isPending" disabled>Loading ...</button>
+      <button v-if="!isPending">התחבר</button>
+      <button v-if="isPending" disabled>טוען ...</button>
       
       
 
