@@ -7,14 +7,14 @@
 
     <div v-else>
       <!-- Run loop over the appointments array -->
+      <h1>Group A</h1>
       <div v-for="appointment in documents" :key="appointment.id">
         <!-- Show details for each appointment -->
-        <router-link :to="{ name: 'ServiceDetails', params: { id: appointment.serviceId }}">
+        <router-link :to="{ name: 'ServiceDetails', params: { id: appointment.id }}">
           <div class=single @click="handleSingle(appointment)">
-              <div class="info"> 
-                  <h3>{{ appointment.name }}</h3>
-                  <h4>{{ timestampToDate(appointment.date) }}</h4>
-                  <h5>{{ appointment.start }} - {{ appointment.end }}</h5>
+              <div class="info">            
+                  <h3> {{appointment.id}} - {{ appointment.name }}</h3>
+                  <img :src=appointment.iconUrl>
               </div>
           </div>
         </router-link>
@@ -45,7 +45,7 @@ export default {
       // Get current user
       const { user } = getUser()
       // Get current user documents by user id
-      const { error, documents } = getCollection('users', user.value.uid, 'appointments')
+      const { error, documents } = getCollection('teams')
 
       // return necessary functions and attributes
       return { timestampToDate, documents, error}
