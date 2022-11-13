@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve", 
+    "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
     "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build"
   },
   "dependencies": {
@@ -15,7 +15,7 @@
     "firebaseui": "^4.8.0",
     "primeicons": "^4.1.0",
     "primevue": "^3.5.0",
-    "vue": "^3.0.0",
+    "vue": "^3.2.45",
     "vue-burger-menu": "^2.0.5",
     "vue-router": "^4.0.0-0",
     "vue-timeselector": "^1.0.0",
